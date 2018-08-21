@@ -9,7 +9,7 @@ namespace thread_utils
 {
     inline void sleep_for(int64_t milliseconds)
     {
-        std::this_thread::sleep_for();
+        std::this_thread::sleep_for(milliseconds);
     }
     
     inline void sleep_until(int64_t timestamp_ms)
