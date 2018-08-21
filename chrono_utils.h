@@ -18,7 +18,7 @@ namespace chrono_utils
      */
     inline int64_t system_time_ms()
     {
-        return std::chrono::time_point_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()).time_since_epoch().count();
+        return std::chrono::time_point_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()).time_since_epoch().count();
     }
     /**
      * Returns the system time in windows time format
