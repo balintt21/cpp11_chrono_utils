@@ -34,7 +34,7 @@ Utility wrapper functions of std::chrono's and std::this_thread's functionality
         puts("Done.");
 
         return 0;
-   }
+    }
    
   End.
 
