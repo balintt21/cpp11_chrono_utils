@@ -39,7 +39,7 @@ namespace chrono_utils
 
     /**
      * Returns a time point for the current time. See timediff_ms, timediff_s
-     * @return A time point is returend
+     * @return A time point is returned
      */
     inline std::chrono::time_point<std::chrono::steady_clock> timediff_start()
     {
