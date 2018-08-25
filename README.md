@@ -36,5 +36,5 @@ Utility wrapper functions of std::chrono's and std::this_thread's functionality
         return 0;
     }
    
-  End.
+  
 
