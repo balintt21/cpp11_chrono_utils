@@ -50,7 +50,6 @@ namespace chrono_utils
         static constexpr int64_t MAC_UNIX_DELTA = 0x1E4F3397400LL;
         return (system_time_ms() + MAC_UNIX_DELTA);
     }
-
     /**
      * Returns a time point for the current time. See timediff_ms, timediff_s
      * @return A time point is returned
