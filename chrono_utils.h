@@ -7,6 +7,20 @@
 namespace chrono_utils
 {
     /**
+     * Returns the monotonic time in nanoseconds
+     */
+    inline int64_t monotonic_time_ns()
+    {
+        return std::chrono::time_point_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now()).time_since_epoch().count();
+    }
+    /**
+     * Returns the monotonic time in microrseconds
+     */
+    inline int64_t monotonic_time_us()
+    {
+        return std::chrono::time_point_cast<std::chrono::microseconds>(std::chrono::steady_clock::now()).time_since_epoch().count();
+    }
+    /**
      * Returns the monotonic time in milliseconds
      */
     inline int64_t monotonic_time_ms()
